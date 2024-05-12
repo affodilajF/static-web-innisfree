@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poopins", sans-serif;
+}
+
+/*  */
+
+.button-container {
+  display: flex;
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+.button-container button {
+  margin: 0 10px; /* Adds a margin between each button */
+}
+
+.productlist {
+  position: relative;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.5rem;
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar elemen */
+}
+
+.productlist .container {
+  border: 1px solid #9bbf82;
+  box-shadow: 0px 4px 15px rgba(159, 191, 154, 0.08);
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productlist .container .gambarproduct {
+  flex: 0.4; /* Memberikan bobot yang sama untuk gambarproduct agar mengisi ruang yang tersedia */
+}
+
+.productlist .container .detaildata {
+  flex: 2; /* Memberikan bobot yang lebih besar untuk detaildata agar mengisi lebih banyak ruang */
+}
+
+.productlist .container .delete {
+  flex: 0; /* Memberikan bobot 0 untuk delete agar tetap pada posisi aslinya */
+}
+.gambarproduct img {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+.trash {
+  width: 4rem;
+  height: 4rem;
+}
+.trash img {
+  /* width: 100%; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.1rem;
+  margin-right: 0.9rem;
+}
+
+h4 {
+  /* padding-top: 0.5rem; */
+}
+
+.checkoutbutton {
+  /* position: relative; */
+  /* top: 3rem;  */
+  /* padding-top: 9rem; */
+  padding: 1.4rem 9%;
+  padding-bottom: 0;
+}
+.btn-checkout {
+  background-color: #4caf50; /* Warna background */
+  color: white; /* Warna teks */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Menghilangkan border */
+  border-radius: 5px; /* Membuat sudut tombol sedikit melengkung */
+  cursor: pointer; /* Menjadikan cursor menjadi pointer saat diarahkan ke tombol */
+  font-size: 16px; /* Ukuran font */
+  margin-left: 1rem;
+}
+.checkout {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* display: flex; */
+  /* padding: 1.4rem 9%; */
+  /* display: none; */
+  /* position: absolute; */
+  position: fixed;
+  z-index: 999000009;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.warp-container {
+  background-color: white;
+  position: relative;
+  padding: 1.2rem;
+  width: 70%;
+  margin: 10% auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.warp-container > div:first-child {
+  flex: 1.5; /* Memberikan lebar yang lebih besar untuk About Us */
+}
+
+.warp-container > div:last-child {
+  flex: 1; /* Memberikan lebar yang lebih kecil untuk Contact Us */
+}
+
+.btn-back {
+  padding: 5px 20px;
+  font-size: 12px;
+  background-color: white;
+  color: #4caf50; /* Warna teks */
+  border: 1px solid #4caf50; /* Outline hijau */
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-confirm {
+  padding: 5px 20px;
+  font-size: 12px;
+  background-color:  #fb9b0a;
+  color: white; /* Warna teks */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkout h4 {
+  font-weight: 700;
+  color: #34724b;
+}
+.checkout {
+  /* Properti CSS lainnya */
+  color: #34724b;
+  /* color: chartreuse; */
+}
+.checkout h6 {
+  margin-top: 1.2rem;
+}
+.checkout p {
+  color: #34724b;
+  background-color: rgba(104, 167, 124, 0.3);
+  padding: 0.5rem;
+  max-width: 31rem;
+  border-radius: 0.3rem;
+}
+button {
+  margin-top: 3rem;
+}
+#totalHarga {
+  /* Properti CSS untuk mengatur total price */
+  /* Misalnya: */
+  font-size: 3rem;
+  color: #34724b;
+  font-weight: 800;
+  background-color: #fefefe;
+}
